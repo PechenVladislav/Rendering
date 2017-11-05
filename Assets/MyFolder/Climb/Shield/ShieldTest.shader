@@ -1,37 +1,36 @@
 // Shader created with Shader Forge v1.38 
 // Shader Forge (c) Neat Corporation / Joachim Holmer - http://www.acegikmo.com/shaderforge/
 // Note: Manually altering this data may prevent you from opening it in Shader Forge
-/*SF_DATA;ver:1.38;sub:START;pass:START;ps:flbk:,iptp:0,cusa:False,bamd:0,cgin:,lico:1,lgpr:1,limd:3,spmd:1,trmd:0,grmd:0,uamb:True,mssp:True,bkdf:True,hqlp:False,rprd:True,enco:False,rmgx:True,imps:True,rpth:0,vtps:0,hqsc:True,nrmq:1,nrsp:0,vomd:0,spxs:False,tesm:0,olmd:1,culm:0,bsrc:3,bdst:7,dpts:0,wrdp:False,dith:0,atcv:False,rfrpo:True,rfrpn:Refraction,coma:15,ufog:True,aust:True,igpj:True,qofs:0,qpre:3,rntp:2,fgom:False,fgoc:False,fgod:False,fgor:False,fgmd:0,fgcr:0.5,fgcg:0.5,fgcb:0.5,fgca:1,fgde:0.01,fgrn:0,fgrf:300,stcl:False,atwp:False,stva:128,stmr:255,stmw:255,stcp:6,stps:0,stfa:0,stfz:0,ofsf:0,ofsu:0,f2p0:False,fnsp:False,fnfb:False,fsmp:False;n:type:ShaderForge.SFN_Final,id:2865,x:34256,y:33823,varname:node_2865,prsc:2|diff-6343-OUT,spec-358-OUT,gloss-1813-OUT,normal-5964-RGB,emission-5260-OUT,amdfl-2173-RGB,alpha-2884-OUT,voffset-737-OUT;n:type:ShaderForge.SFN_Multiply,id:6343,x:32558,y:32521,varname:node_6343,prsc:2|A-7736-RGB,B-6665-RGB;n:type:ShaderForge.SFN_Color,id:6665,x:32261,y:32606,ptovrint:False,ptlb:Color,ptin:_Color,varname:_Color,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,c1:0.1586208,c2:0,c3:1,c4:1;n:type:ShaderForge.SFN_Tex2d,id:7736,x:32261,y:32421,ptovrint:True,ptlb:Base Color,ptin:_MainTex,varname:_MainTex,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,ntxv:0,isnm:False;n:type:ShaderForge.SFN_Tex2d,id:5964,x:32407,y:32978,ptovrint:True,ptlb:Normal Map,ptin:_BumpMap,varname:_BumpMap,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,ntxv:3,isnm:True;n:type:ShaderForge.SFN_Slider,id:358,x:32250,y:32786,ptovrint:False,ptlb:Specular,ptin:_Specular,varname:node_358,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0,cur:0.2001645,max:1;n:type:ShaderForge.SFN_Slider,id:1813,x:32201,y:32875,ptovrint:False,ptlb:Gloss,ptin:_Gloss,varname:_Metallic_copy,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0,cur:0.8432622,max:1;n:type:ShaderForge.SFN_TexCoord,id:2551,x:32511,y:33887,varname:node_2551,prsc:2,uv:0,uaff:False;n:type:ShaderForge.SFN_NormalVector,id:8693,x:32955,y:34265,prsc:2,pt:True;n:type:ShaderForge.SFN_Step,id:223,x:33367,y:33941,varname:node_223,prsc:2|A-2551-U,B-2816-OUT;n:type:ShaderForge.SFN_Slider,id:2816,x:32255,y:34173,ptovrint:False,ptlb:node_2816,ptin:_node_2816,varname:node_2816,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:1,cur:0,max:0;n:type:ShaderForge.SFN_Multiply,id:737,x:33491,y:34382,varname:node_737,prsc:2|A-223-OUT,B-6411-OUT;n:type:ShaderForge.SFN_Multiply,id:6411,x:33198,y:34327,varname:node_6411,prsc:2|A-8693-OUT,B-4660-OUT;n:type:ShaderForge.SFN_RemapRangeAdvanced,id:4660,x:32917,y:34714,varname:node_4660,prsc:2|IN-2816-OUT,IMIN-8911-OUT,IMAX-2551-U,OMIN-493-OUT,OMAX-7839-OUT;n:type:ShaderForge.SFN_Vector1,id:8911,x:32518,y:34688,varname:node_8911,prsc:2,v1:1;n:type:ShaderForge.SFN_Vector1,id:7839,x:32558,y:34880,varname:node_7839,prsc:2,v1:0;n:type:ShaderForge.SFN_Vector1,id:493,x:32558,y:34821,varname:node_493,prsc:2,v1:1;n:type:ShaderForge.SFN_OneMinus,id:115,x:33500,y:34892,varname:node_115,prsc:2|IN-4660-OUT;n:type:ShaderForge.SFN_Clamp01,id:6839,x:33717,y:34868,varname:node_6839,prsc:2|IN-115-OUT;n:type:ShaderForge.SFN_Fresnel,id:2476,x:33414,y:33741,varname:node_2476,prsc:2|EXP-4391-OUT;n:type:ShaderForge.SFN_ValueProperty,id:4391,x:33226,y:33756,ptovrint:False,ptlb:RimPower,ptin:_RimPower,varname:node_4391,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,v1:3;n:type:ShaderForge.SFN_Multiply,id:5260,x:33828,y:33936,varname:node_5260,prsc:2|A-2476-OUT,B-3342-RGB;n:type:ShaderForge.SFN_Color,id:3342,x:33569,y:33941,ptovrint:False,ptlb:node_3342,ptin:_node_3342,varname:node_3342,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,c1:0,c2:1,c3:0.2551723,c4:1;n:type:ShaderForge.SFN_AmbientLight,id:2173,x:34052,y:33961,varname:node_2173,prsc:2;n:type:ShaderForge.SFN_Vector1,id:5109,x:33681,y:34501,varname:node_5109,prsc:2,v1:1;n:type:ShaderForge.SFN_Vector1,id:9302,x:33647,y:34597,varname:node_9302,prsc:2,v1:0;n:type:ShaderForge.SFN_RemapRangeAdvanced,id:2884,x:33991,y:34352,varname:node_2884,prsc:2|IN-6839-OUT,IMIN-5109-OUT,IMAX-9302-OUT,OMIN-6665-A,OMAX-3227-OUT;n:type:ShaderForge.SFN_Vector1,id:3227,x:33681,y:34719,varname:node_3227,prsc:2,v1:0;proporder:5964-6665-7736-358-1813-2816-4391-3342;pass:END;sub:END;*/
+/*SF_DATA;ver:1.38;sub:START;pass:START;ps:flbk:,iptp:0,cusa:False,bamd:0,cgin:,lico:1,lgpr:1,limd:3,spmd:1,trmd:0,grmd:0,uamb:True,mssp:True,bkdf:True,hqlp:False,rprd:True,enco:False,rmgx:True,imps:True,rpth:0,vtps:0,hqsc:False,nrmq:1,nrsp:0,vomd:0,spxs:False,tesm:0,olmd:1,culm:0,bsrc:0,bdst:1,dpts:0,wrdp:True,dith:0,atcv:False,rfrpo:False,rfrpn:Refraction,coma:15,ufog:True,aust:True,igpj:False,qofs:0,qpre:1,rntp:1,fgom:False,fgoc:False,fgod:False,fgor:False,fgmd:0,fgcr:0.5,fgcg:0.5,fgcb:0.5,fgca:1,fgde:0.01,fgrn:0,fgrf:300,stcl:False,atwp:False,stva:128,stmr:255,stmw:255,stcp:6,stps:0,stfa:0,stfz:0,ofsf:0,ofsu:0,f2p0:False,fnsp:False,fnfb:False,fsmp:False;n:type:ShaderForge.SFN_Final,id:2865,x:34256,y:33823,varname:node_2865,prsc:2|diff-6343-OUT,spec-358-OUT,gloss-1813-OUT,normal-5964-RGB,emission-5260-OUT,amdfl-2173-RGB,voffset-737-OUT;n:type:ShaderForge.SFN_Multiply,id:6343,x:32558,y:32521,varname:node_6343,prsc:2|A-7736-RGB,B-6665-RGB;n:type:ShaderForge.SFN_Color,id:6665,x:32261,y:32606,ptovrint:False,ptlb:Color,ptin:_Color,varname:_Color,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,c1:0.1586208,c2:0,c3:1,c4:1;n:type:ShaderForge.SFN_Tex2d,id:7736,x:32261,y:32421,ptovrint:True,ptlb:Base Color,ptin:_MainTex,varname:_MainTex,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,ntxv:0,isnm:False;n:type:ShaderForge.SFN_Tex2d,id:5964,x:32407,y:32978,ptovrint:True,ptlb:Normal Map,ptin:_BumpMap,varname:_BumpMap,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,ntxv:3,isnm:True;n:type:ShaderForge.SFN_Slider,id:358,x:32250,y:32786,ptovrint:False,ptlb:Specular,ptin:_Specular,varname:node_358,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0,cur:0.2001645,max:1;n:type:ShaderForge.SFN_Slider,id:1813,x:32201,y:32875,ptovrint:False,ptlb:Gloss,ptin:_Gloss,varname:_Metallic_copy,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0,cur:0.8432622,max:1;n:type:ShaderForge.SFN_TexCoord,id:2551,x:32333,y:33958,varname:node_2551,prsc:2,uv:0,uaff:False;n:type:ShaderForge.SFN_NormalVector,id:8693,x:32834,y:34265,prsc:2,pt:True;n:type:ShaderForge.SFN_Step,id:223,x:33105,y:34093,varname:node_223,prsc:2|A-2551-U,B-2816-OUT;n:type:ShaderForge.SFN_Slider,id:2816,x:32240,y:34173,ptovrint:False,ptlb:Emergence,ptin:_Emergence,varname:node_2816,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:1,cur:0.7128916,max:0;n:type:ShaderForge.SFN_Multiply,id:737,x:33491,y:34382,varname:node_737,prsc:2|A-223-OUT,B-6411-OUT;n:type:ShaderForge.SFN_Multiply,id:6411,x:33198,y:34327,varname:node_6411,prsc:2|A-8693-OUT,B-4660-OUT,C-657-OUT;n:type:ShaderForge.SFN_RemapRangeAdvanced,id:4660,x:32917,y:34714,varname:node_4660,prsc:2|IN-2816-OUT,IMIN-8911-OUT,IMAX-2551-U,OMIN-493-OUT,OMAX-7839-OUT;n:type:ShaderForge.SFN_Vector1,id:8911,x:32518,y:34688,varname:node_8911,prsc:2,v1:1;n:type:ShaderForge.SFN_Vector1,id:7839,x:32558,y:34880,varname:node_7839,prsc:2,v1:0;n:type:ShaderForge.SFN_Vector1,id:493,x:32255,y:34824,varname:node_493,prsc:2,v1:1;n:type:ShaderForge.SFN_OneMinus,id:115,x:33500,y:34892,varname:node_115,prsc:2|IN-4660-OUT;n:type:ShaderForge.SFN_Clamp01,id:6839,x:33717,y:34868,varname:node_6839,prsc:2|IN-115-OUT;n:type:ShaderForge.SFN_Fresnel,id:2476,x:33414,y:33741,varname:node_2476,prsc:2|EXP-4391-OUT;n:type:ShaderForge.SFN_ValueProperty,id:4391,x:33226,y:33756,ptovrint:False,ptlb:RimPower,ptin:_RimPower,varname:node_4391,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,v1:3;n:type:ShaderForge.SFN_Multiply,id:5260,x:33828,y:33936,varname:node_5260,prsc:2|A-2476-OUT,B-3342-RGB;n:type:ShaderForge.SFN_Color,id:3342,x:33569,y:33941,ptovrint:False,ptlb:Rim Color,ptin:_RimColor,varname:node_3342,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,c1:0,c2:1,c3:0.2551723,c4:1;n:type:ShaderForge.SFN_AmbientLight,id:2173,x:33982,y:33991,varname:node_2173,prsc:2;n:type:ShaderForge.SFN_Vector1,id:5109,x:33681,y:34501,varname:node_5109,prsc:2,v1:1;n:type:ShaderForge.SFN_Vector1,id:9302,x:33647,y:34597,varname:node_9302,prsc:2,v1:0;n:type:ShaderForge.SFN_RemapRangeAdvanced,id:2884,x:33991,y:34352,varname:node_2884,prsc:2|IN-6839-OUT,IMIN-5109-OUT,IMAX-9302-OUT,OMIN-6665-A,OMAX-3227-OUT;n:type:ShaderForge.SFN_Vector1,id:3227,x:33681,y:34719,varname:node_3227,prsc:2,v1:0;n:type:ShaderForge.SFN_ValueProperty,id:657,x:32811,y:34459,ptovrint:False,ptlb:Height,ptin:_Height,varname:node_657,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,v1:1;proporder:5964-6665-7736-358-1813-2816-4391-3342-657;pass:END;sub:END;*/
 
 Shader "Shader Forge/ShieldTest" {
     Properties {
         _BumpMap ("Normal Map", 2D) = "bump" {}
-        [HDR]_Color ("Color", Color) = (0.1586208,0,1,1)
+        _Color ("Color", Color) = (0.1586208,0,1,1)
         _MainTex ("Base Color", 2D) = "white" {}
         _Specular ("Specular", Range(0, 1)) = 0.2001645
         _Gloss ("Gloss", Range(0, 1)) = 0.8432622
-        _node_2816 ("Emergence", Range(1, 0)) = 0
-        _RimPower ("Rim Power", Float ) = 3
-        [HDR]_node_3342 ("Rim Color", Color) = (0,1,0.2551723,1)
-        [HideInInspector]_Cutoff ("Alpha cutoff", Range(0,1)) = 0.5
+        _Emergence ("Emergence", Range(1, 0)) = 0.7128916
+        _RimPower ("RimPower", Float ) = 3
+        _RimColor ("Rim Color", Color) = (0,1,0.2551723,1)
+        _Height ("Height", Float ) = 1
     }
     SubShader {
         Tags {
-            "IgnoreProjector"="True"
-            "Queue"="Transparent"
-            "RenderType"="Transparent"
-        }
-		Pass{
+            "RenderType"="Opaque"
+        }		Pass
+		{
 			ColorMask 0
+			ZWrite On
+			//ZTest GEqual
 		}
         Pass {
             Name "FORWARD"
             Tags {
                 "LightMode"="ForwardBase"
             }
-            Blend SrcAlpha OneMinusSrcAlpha
             //ZTest Less
-            ZWrite Off
+            
             
             CGPROGRAM
             #pragma vertex vert
@@ -40,10 +39,11 @@ Shader "Shader Forge/ShieldTest" {
             #define SHOULD_SAMPLE_SH ( defined (LIGHTMAP_OFF) && defined(DYNAMICLIGHTMAP_OFF) )
             #define _GLOSSYENV 1
             #include "UnityCG.cginc"
+            #include "AutoLight.cginc"
             #include "Lighting.cginc"
             #include "UnityPBSLighting.cginc"
             #include "UnityStandardBRDF.cginc"
-            #pragma multi_compile_fwdbase
+            #pragma multi_compile_fwdbase_fullshadows
             #pragma multi_compile LIGHTMAP_OFF LIGHTMAP_ON
             #pragma multi_compile DIRLIGHTMAP_OFF DIRLIGHTMAP_COMBINED DIRLIGHTMAP_SEPARATE
             #pragma multi_compile DYNAMICLIGHTMAP_OFF DYNAMICLIGHTMAP_ON
@@ -55,9 +55,10 @@ Shader "Shader Forge/ShieldTest" {
             uniform sampler2D _BumpMap; uniform float4 _BumpMap_ST;
             uniform float _Specular;
             uniform float _Gloss;
-            uniform float _node_2816;
+            uniform float _Emergence;
             uniform float _RimPower;
-            uniform float4 _node_3342;
+            uniform float4 _RimColor;
+            uniform float _Height;
             struct VertexInput {
                 float4 vertex : POSITION;
                 float3 normal : NORMAL;
@@ -75,9 +76,10 @@ Shader "Shader Forge/ShieldTest" {
                 float3 normalDir : TEXCOORD4;
                 float3 tangentDir : TEXCOORD5;
                 float3 bitangentDir : TEXCOORD6;
-                UNITY_FOG_COORDS(7)
+                LIGHTING_COORDS(7,8)
+                UNITY_FOG_COORDS(9)
                 #if defined(LIGHTMAP_ON) || defined(UNITY_SHOULD_SAMPLE_SH)
-                    float4 ambientOrLightmapUV : TEXCOORD8;
+                    float4 ambientOrLightmapUV : TEXCOORD10;
                 #endif
             };
             VertexOutput vert (VertexInput v) {
@@ -98,12 +100,13 @@ Shader "Shader Forge/ShieldTest" {
                 o.bitangentDir = normalize(cross(o.normalDir, o.tangentDir) * v.tangent.w);
                 float node_8911 = 1.0;
                 float node_493 = 1.0;
-                float node_4660 = (node_493 + ( (_node_2816 - node_8911) * (0.0 - node_493) ) / (o.uv0.r - node_8911));
-                v.vertex.xyz += (step(o.uv0.r,_node_2816)*(v.normal*node_4660));
+                float node_4660 = (node_493 + ( (_Emergence - node_8911) * (0.0 - node_493) ) / (o.uv0.r - node_8911));
+                v.vertex.xyz += (step(o.uv0.r,_Emergence)*(v.normal*node_4660*_Height));
                 o.posWorld = mul(unity_ObjectToWorld, v.vertex);
                 float3 lightColor = _LightColor0.rgb;
                 o.pos = UnityObjectToClipPos( v.vertex );
                 UNITY_TRANSFER_FOG(o,o.pos);
+                TRANSFER_VERTEX_TO_FRAGMENT(o)
                 return o;
             }
             float4 frag(VertexOutput i) : COLOR {
@@ -118,7 +121,7 @@ Shader "Shader Forge/ShieldTest" {
                 float3 lightColor = _LightColor0.rgb;
                 float3 halfDirection = normalize(viewDirection+lightDirection);
 ////// Lighting:
-                float attenuation = 1;
+                float attenuation = LIGHT_ATTENUATION(i);
                 float3 attenColor = attenuation * _LightColor0.xyz;
                 float Pi = 3.141592654;
                 float InvPi = 0.31830988618;
@@ -213,14 +216,10 @@ Shader "Shader Forge/ShieldTest" {
                 indirectDiffuse += gi.indirect.diffuse;
                 float3 diffuse = (directDiffuse + indirectDiffuse) * diffuseColor;
 ////// Emissive:
-                float3 emissive = (pow(1.0-max(0,dot(normalDirection, viewDirection)),_RimPower)*_node_3342.rgb);
+                float3 emissive = (pow(1.0-max(0,dot(normalDirection, viewDirection)),_RimPower)*_RimColor.rgb);
 /// Final Color:
                 float3 finalColor = diffuse + specular + emissive;
-                float node_8911 = 1.0;
-                float node_493 = 1.0;
-                float node_4660 = (node_493 + ( (_node_2816 - node_8911) * (0.0 - node_493) ) / (i.uv0.r - node_8911));
-                float node_5109 = 1.0;
-                fixed4 finalRGBA = fixed4(finalColor,(_Color.a + ( (saturate((1.0 - node_4660)) - node_5109) * (0.0 - _Color.a) ) / (0.0 - node_5109)));
+                fixed4 finalRGBA = fixed4(finalColor,1);
                 UNITY_APPLY_FOG(i.fogCoord, finalRGBA);
                 return finalRGBA;
             }
@@ -233,7 +232,7 @@ Shader "Shader Forge/ShieldTest" {
             }
             Blend One One
             ZTest Less
-            ZWrite Off
+            
             
             CGPROGRAM
             #pragma vertex vert
@@ -246,7 +245,7 @@ Shader "Shader Forge/ShieldTest" {
             #include "Lighting.cginc"
             #include "UnityPBSLighting.cginc"
             #include "UnityStandardBRDF.cginc"
-            #pragma multi_compile_fwdadd
+            #pragma multi_compile_fwdadd_fullshadows
             #pragma multi_compile LIGHTMAP_OFF LIGHTMAP_ON
             #pragma multi_compile DIRLIGHTMAP_OFF DIRLIGHTMAP_COMBINED DIRLIGHTMAP_SEPARATE
             #pragma multi_compile DYNAMICLIGHTMAP_OFF DYNAMICLIGHTMAP_ON
@@ -258,9 +257,10 @@ Shader "Shader Forge/ShieldTest" {
             uniform sampler2D _BumpMap; uniform float4 _BumpMap_ST;
             uniform float _Specular;
             uniform float _Gloss;
-            uniform float _node_2816;
+            uniform float _Emergence;
             uniform float _RimPower;
-            uniform float4 _node_3342;
+            uniform float4 _RimColor;
+            uniform float _Height;
             struct VertexInput {
                 float4 vertex : POSITION;
                 float3 normal : NORMAL;
@@ -291,8 +291,8 @@ Shader "Shader Forge/ShieldTest" {
                 o.bitangentDir = normalize(cross(o.normalDir, o.tangentDir) * v.tangent.w);
                 float node_8911 = 1.0;
                 float node_493 = 1.0;
-                float node_4660 = (node_493 + ( (_node_2816 - node_8911) * (0.0 - node_493) ) / (o.uv0.r - node_8911));
-                v.vertex.xyz += (step(o.uv0.r,_node_2816)*(v.normal*node_4660));
+                float node_4660 = (node_493 + ( (_Emergence - node_8911) * (0.0 - node_493) ) / (o.uv0.r - node_8911));
+                v.vertex.xyz += (step(o.uv0.r,_Emergence)*(v.normal*node_4660*_Height));
                 o.posWorld = mul(unity_ObjectToWorld, v.vertex);
                 float3 lightColor = _LightColor0.rgb;
                 o.pos = UnityObjectToClipPos( v.vertex );
@@ -354,11 +354,7 @@ Shader "Shader Forge/ShieldTest" {
                 float3 diffuse = directDiffuse * diffuseColor;
 /// Final Color:
                 float3 finalColor = diffuse + specular;
-                float node_8911 = 1.0;
-                float node_493 = 1.0;
-                float node_4660 = (node_493 + ( (_node_2816 - node_8911) * (0.0 - node_493) ) / (i.uv0.r - node_8911));
-                float node_5109 = 1.0;
-                fixed4 finalRGBA = fixed4(finalColor * (_Color.a + ( (saturate((1.0 - node_4660)) - node_5109) * (0.0 - _Color.a) ) / (0.0 - node_5109)),0);
+                fixed4 finalRGBA = fixed4(finalColor * 1,0);
                 UNITY_APPLY_FOG(i.fogCoord, finalRGBA);
                 return finalRGBA;
             }
@@ -390,7 +386,8 @@ Shader "Shader Forge/ShieldTest" {
             #pragma multi_compile_fog
             #pragma only_renderers d3d9 d3d11 glcore gles 
             #pragma target 3.0
-            uniform float _node_2816;
+            uniform float _Emergence;
+            uniform float _Height;
             struct VertexInput {
                 float4 vertex : POSITION;
                 float3 normal : NORMAL;
@@ -414,8 +411,8 @@ Shader "Shader Forge/ShieldTest" {
                 o.normalDir = UnityObjectToWorldNormal(v.normal);
                 float node_8911 = 1.0;
                 float node_493 = 1.0;
-                float node_4660 = (node_493 + ( (_node_2816 - node_8911) * (0.0 - node_493) ) / (o.uv0.r - node_8911));
-                v.vertex.xyz += (step(o.uv0.r,_node_2816)*(v.normal*node_4660));
+                float node_4660 = (node_493 + ( (_Emergence - node_8911) * (0.0 - node_493) ) / (o.uv0.r - node_8911));
+                v.vertex.xyz += (step(o.uv0.r,_Emergence)*(v.normal*node_4660*_Height));
                 o.posWorld = mul(unity_ObjectToWorld, v.vertex);
                 o.pos = UnityObjectToClipPos( v.vertex );
                 TRANSFER_SHADOW_CASTER(o)
@@ -459,9 +456,10 @@ Shader "Shader Forge/ShieldTest" {
             uniform sampler2D _MainTex; uniform float4 _MainTex_ST;
             uniform float _Specular;
             uniform float _Gloss;
-            uniform float _node_2816;
+            uniform float _Emergence;
             uniform float _RimPower;
-            uniform float4 _node_3342;
+            uniform float4 _RimColor;
+            uniform float _Height;
             struct VertexInput {
                 float4 vertex : POSITION;
                 float3 normal : NORMAL;
@@ -485,8 +483,8 @@ Shader "Shader Forge/ShieldTest" {
                 o.normalDir = UnityObjectToWorldNormal(v.normal);
                 float node_8911 = 1.0;
                 float node_493 = 1.0;
-                float node_4660 = (node_493 + ( (_node_2816 - node_8911) * (0.0 - node_493) ) / (o.uv0.r - node_8911));
-                v.vertex.xyz += (step(o.uv0.r,_node_2816)*(v.normal*node_4660));
+                float node_4660 = (node_493 + ( (_Emergence - node_8911) * (0.0 - node_493) ) / (o.uv0.r - node_8911));
+                v.vertex.xyz += (step(o.uv0.r,_Emergence)*(v.normal*node_4660*_Height));
                 o.posWorld = mul(unity_ObjectToWorld, v.vertex);
                 o.pos = UnityMetaVertexPosition(v.vertex, v.texcoord1.xy, v.texcoord2.xy, unity_LightmapST, unity_DynamicLightmapST );
                 return o;
@@ -498,7 +496,7 @@ Shader "Shader Forge/ShieldTest" {
                 UnityMetaInput o;
                 UNITY_INITIALIZE_OUTPUT( UnityMetaInput, o );
                 
-                o.Emission = (pow(1.0-max(0,dot(normalDirection, viewDirection)),_RimPower)*_node_3342.rgb);
+                o.Emission = (pow(1.0-max(0,dot(normalDirection, viewDirection)),_RimPower)*_RimColor.rgb);
                 
                 float4 _MainTex_var = tex2D(_MainTex,TRANSFORM_TEX(i.uv0, _MainTex));
                 float3 diffColor = (_MainTex_var.rgb*_Color.rgb);
